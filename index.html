@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my first project</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Starts.png" id="starts">
+        <img src="Moon.png" id="moon">
+        <img src="Mountains_b.png" id="mountains_b">
+        <h2 id="text">The Story of the Night</h2>
+        <a href="#explore" id="btn">Explore</a>
+        <img src="Mountains_f.png" id="mountains_f">
+
+    </section>
+    <div class="explore" id="explore">
+        <h2>The Story of the Night</h2>
+        <p>
+            From the award-winning author of Brooklyn and The Master, a powerful, brave, and moving novel set in Argentina.<br><br>
+
+            In Argentina, in the time of the Generals, the streets are empty at night, and people have trained themselves not to see. Richard Garay lives with his mother, hiding his sexuality from her and from society. Stifled by his job, Richard is willing to take chances, both sexually and professionally. But Argentina is changing, and as his country edges toward peace, Richard tentatively begins a love affair. The result is a powerful, brave, and poignant novel of sex, death, and the diffculties of connecting one's inner life with the outside world.
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            copyright © oussama balbal<br>
+
+        </p>
+    </div>
+    <script>
+        let starts = document.getElementById("starts");
+        let moon = document.getElementById("moon");
+        let mountains_b = document.getElementById("mountains_b");
+        let mountains_f = document.getElementById("mountains_f");
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        window.addEventListener('scroll',function(){
+            let value =window.scrollY;
+            starts.style.left=value+ 'px';
+            moon.style.top=value+'px';
+            mountains_b.style.top=value*0.5+'px';
+            mountains_f.style.top=value*0+'px';
+            text.style.marginRight=value*4+'px';
+            text.style.marginTop=value*1.5+'px';
+            btn.style.marginTop=value*1.5+'px';
+
+        })
+    </script>
+    
+</body>
+</html>
